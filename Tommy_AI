@@ -8,10 +8,12 @@
 ; 增强中国IP段：不支持
 ; 增强国外GFW：不支持
 
-; ====== 优化去重，合并重复的 ruleset ======
+; ====== 自定义策略 ======
 
 ruleset=🌍 国外媒体,https://raw.githubusercontent.com/TommySHXD/ClashSelf/main/MediaProxy.list
 ruleset=🎯 全球直连,https://raw.githubusercontent.com/TommySHXD/ClashSelf/main/MediaDirect.list
+
+; ====== 优化去重 ======
 
 ruleset=🌍 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
 ruleset=📲 电报信息,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
@@ -28,6 +30,7 @@ ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/mast
 ruleset=🛑 全球拦截,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
 
 ; DNS 泄漏防护相关，使用 no-resolve 选项，确保 DNS 请求不被代理服务器解析
+
 ruleset=🎯 全球直连,[]GEOSITE,CN,no-resolve
 ruleset=🎯 全球直连,[]GEOIP,CN,no-resolve
 
